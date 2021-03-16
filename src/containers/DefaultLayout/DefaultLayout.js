@@ -213,6 +213,9 @@ const routes = [
       ]
     } 
 
+
+    //<AppBreadcrumb appRoutes={routes} router={router} />
+
     return (
       <div className="app">
         <AppHeader fixed>
@@ -231,7 +234,7 @@ const routes = [
             <AppSidebarMinimizer />
           </AppSidebar>
           <main className="main">
-            <AppBreadcrumb appRoutes={routes} router={router} />
+            
             <Container fluid>
               <Suspense fallback={this.loading()}>
                 <Switch>

@@ -3,13 +3,14 @@
 # dependencies
 /node_modules
 auto_back/node_modules
-auto_back/build
+
 
 # testing
 /coverage
 
 # production
 /build
+auto_back/build
 
 
 # misc
