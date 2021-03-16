@@ -1,0 +1,7 @@
+{
+    "name": "Commande_Client",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./Commande_Client.js"
+  }
+  

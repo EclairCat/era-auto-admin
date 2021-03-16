@@ -2,12 +2,15 @@
 
 # dependencies
 /node_modules
+auto_back/node_modules
+auto_back/build
 
 # testing
 /coverage
 
 # production
 /build
+
 
 # misc
 .DS_Store

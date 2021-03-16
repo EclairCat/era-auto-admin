@@ -1,0 +1,421 @@
+{
+    "translate": {
+        "title":"Langages",
+        "msg":"Changer la langue",
+        "en":"Anglais",
+        "fr":"Français",
+        "ru":"Russe"
+    },
+
+    "side_menu":{
+        "home":"ACCEUIL",
+        "client":{
+            "title":"CLIENT",
+            "list":"Liste Client ",
+            "cathegory":"Catégorie Client",
+            "order":"Commande Client",
+            "delivery":"Livraison Client",
+            "new":"Nouveau Client",
+            "new_delivery":"Nouvelle Livraison Client",
+            "bill":"Factures"
+        },
+        "provider":{
+            "title":"FOURNISSEUR",
+            "list":"Liste Fournisseur",
+            "order":"Commande Fournisseur",
+            "delivery":"Livraison Fournisseur",
+            "new":"Nouveau Fournisseur",
+            "new_delivery":"Nouvelle Livraison Fournisseur",
+            "new_order":"Nouvelle Commande Fournisseur"
+        },
+        "product":{
+            "title":"PRODUITS",
+            "new":"Nouveau Produit",
+            "return":"Retourner le produit"
+        },
+        "admin":
+        {
+            "title":"ADMINISTRATION",
+            "api":"API",
+            "list":"Gestion Admin"
+        }
+    },
+
+    "navbar": {
+        "Dashboard":"Tableaux de Bord",
+        "Logout" : "Se Déconnecter"        
+    },
+
+    "DashBoard": {
+        "total_client":"Total Clients",
+        "total_provider": "Total Fournisseurs",
+        "total_sell":"Total Ventes",
+        "gain_received":"Total Commandes"
+
+    },
+
+    "utils": {
+        "refresh_table": "Actualiser",
+        "error_msg":"Erreur"
+    },    
+
+    "filters":{
+        "date":"Date",
+        "period":"Période",
+        "start_period":"Début",
+        "end_period":"Fin",
+        "search": "Chercher",
+        "no_result":"Aucun résultat trouvé",
+        "insert_param":"Veuillez inserer un paramètre en premier"
+
+    },
+
+    "tables_info":{
+        "id_client": "ID Client",
+        "last_name": "Nom",
+        "first_name": "Prénom",
+        "name":"Nom du Client",
+        "id":"ID",
+        "username":"Pseudo",
+        "email":"Email",
+        "date_registration":"Date d'inscription",
+        "role": "Rôle",
+        "phone":"Téléphone",
+        "status":"Statut",
+        "action":"Action",
+        "status_active":"Active",
+        
+        "id_order":"ID Commande",
+        "order":"Commande",
+        "client":"Client",
+        "total":"Total",
+        "detail": "Détail",
+
+        "product_name": "Nom Produit",
+        "id_product":"ID Produit",
+        "quantity": "Quantité",
+        "price": "Prix",
+        "total_price": "Prix Total",
+        
+        "id_delivery":"ID Livraison",
+        "id_provider_delivery":"Id Livraison du Fournisseur",
+        "result":"Résultat",
+        "bill_number":"Numéro de Facture",
+        "date_bill":"Date de la facture",
+        "type_paiement":"Type de paiement",
+        "is_paid":"a été payé ?",
+        "paid":"Payé",
+        "not_paid":"Non Payé",
+        
+        "provider":"Nom Fournisseur",
+        "client_order_id":"ID Commande du Client",
+        "delivery":"Livraison",
+
+        "states":{
+            "state":"Etat",
+            "open":"Ouvert",
+            "recieved":"Reçu",
+            "in_progress": "En Progression",
+            "closed":"Fermé",
+            "rejected":"Commande Rejetée"            
+        },
+
+        "ip_p": "Ip Fournisseur",
+        "api_l": "Lien de l'API",
+        "key": "Clé"
+
+    },
+
+    "Liste_Client": {
+        "client_list":"Liste Client",        
+        "send_notif":"Envoyer une Notification",
+        "send_notif_message":"Envoyer une Notification à ",
+        "category":"Catégorie",
+        "select_category":"Choisir une catégorie",
+        "content": "Contenu",
+        "send":"Envoyer",
+        "edit_client":"Modifier",
+        "placeholder_msg":"Ecrivez votre message ici"
+    },
+
+    "Cathegory_Client": {
+        "type_client_list":"Liste des Types de Client",
+        "type_client": "Type de Client",
+        "margin": "Marge",
+        "add_category":"Ajouter ",
+        "name": "Nom",
+        "add_category_confirm":"Ajouter",
+        "delete":"Supprimer",
+        "msg_default":"Vous ne pouvez supprimer la valeur par défault",
+        "msg_alertbox":"Veuillez entrer les informations"    
+    },
+
+    "Commande_Client": {
+        "order_list":"Liste des Commandes Client",
+        "id_order":"ID Commande",
+        "client_name":"Nom du Client",
+        "confirm_cancel_order_msg":"Vous êtes sur d'annuler la commande ?",
+        "yes":"Oui",
+        "no":"Non"
+        
+
+    },
+
+    "Livraison_Client": {
+        "delivery_list":"Liste des Livraison Client"
+    },
+
+    "form_info":{
+        "data":"Informations",
+        "email":"Email",
+        "phone":"Numéro de Téléphone",
+        "password":"Mot de Passe",
+        "password_confirm":"Confirmation du Mot de Passe",
+        "not_use_primary_message":"Ne pas utiliser la messagerie principale",
+
+        "contact_person":"Personne de Contact",
+        "last_name":"Nom",
+        "first_name":"Prénom",
+        "second_name":"Deuxième Prénom",
+        "active":"Active",
+        "refuse_profile_modif":"Refuser la modification du profil",
+        "display_OEM": "Afficher le numéro OEM en pourcentage",
+
+        "additional":"Supplémentaire",
+        "contact":"Contact",
+        "skype":"Skype",
+        "icq":"ICQ",
+        "website":"Website",
+
+        "legal":"Légale",
+        "delivery":"Livraison",
+        "adress":"Adresse",
+        "index":"Index",
+        "region":"Région",
+        "city":"Ville",
+        "street":"Rue",
+        "house":"Maison",
+        "appartement":"Appartement / Bureau",
+
+        "client":"Client",
+        "information":"Information",
+        "type_client":"Type du Client",
+        "reply_format": "Format de réponse",
+        "reply": "Réponse",
+        "dont_send":"ne pas envoyer",
+        "send_after":"envoyer après traitement",
+        "send_after_param_status":"Envoyer après réponse et changement du statut en \"Rejet\"",
+        "discount_group":"Groupe de Promotion",
+        "allow_customer_asign_discount_groupe":"Permettre au client de s'assigner à un groupe de promotion",
+
+        "credit_limit":"Limite du Crédit (0 - pas de prêt)",
+        "day_deferred_paiement":"Jour du paiement différé (0 - pas de rapport)",
+
+        "discount_card_number":"Numero de carte de Promotion",
+        "promotional_code":"Code de Promotion (plusieurs carte de réduction)",
+        "basis":"Base (Entente, Procuration)",
+        "1cid":"1c ID",
+
+        "invoice_auto":"Emettre une facture automatiquement",
+        "send_sms":"Envoyer un SMS",
+        "send_email":"Envoyer un Email",
+        "receive_last_news":"Recevoir les dernières nouvelles",
+        "dont_send_direct_mail":"Ne pas envoyer de mail direct",
+
+
+
+        "second_name_in_price_list":"Le deuxième nom dans la liste des prix",
+        "view_warehouse_info":"Voir les informations des dépots",
+        "prohib_auto_remittance":"Interdiction des transferts automatiques de fonds",
+        "allow_print_basket":"Laisser imprimer le panier",
+        "disable_access_web":"Désactiver l'accès aux services Web",
+
+        "prohib_invoice":"Interdire la création de factures en présence de créances en souffrance",
+        "dont_send_invoice":"N'envoyez aucun document après la création de la facture",
+        "allow_change_name_product":"Permet de changer le nom du produit dans la fenêtre du panier (V2)",
+        "max_nb_request_pday":"Nombre maximum de demandes (Laximo) par jour",
+        "percentage_package":"Autant que possible dans un pourcentage de colis",
+        "max_nb_visit_24h":"Nombre maximum de visites au cours des dernières 24 heures",
+        "max_nb_visit_hour":"Nombre maximum de visites au cours des dernières heures",
+        "notif_sent_msg":"Une notification est envoyée au responsable client si l'élément «M'avertir des demandes excessives» est actif sur le site Web - Paramètres généraux",
+        "exclude_mark":"Exclure les marques du blocage",
+        "exclude_mark_notif":"Une marque par ligne. Si vous ajoutez une marque à la liste, cette exclusion de marque client ne fonctionnera pas avec la fonctionnalité d'exclusion des listes de prix ou d'exclusion de modèles.",
+        
+        "director":"Directeur",
+        "action_when_order":{
+            "msg":"Action lors de la commande",
+            "select1":"En attente d'approbation",
+            "select2":"\"Pour travailler \" avec une limite positive",
+            "select3":"Passer à l'ordre avec une limite positive",
+            "select4":"S'il n'y a pas de limite de crédit, nous transférons vers \"Paiement en attente \"",
+            "select5":"S'il n'y a pas de limite de crédit, nous la transférons vers \"En attente de paiement \", si disponible, nous la transférons vers le statut \"En cours \"",
+            "select6":"S'il n'y a pas de limite de crédit, nous ne la plaçons pas dans la commande, si disponible, nous la transférons au statut \"En cours \""
+        },
+        
+        "approved_payement_method":{
+            "msg":"Méthode de paiement approuvée"
+        },
+
+        "snapping_visibility":{
+            "msg":"Accrochage à la visibilité"
+        },
+        "disable_default_visibility":"Désactiver la visibilité par défaut",
+
+        "delivery_itinary":{
+            "msg":"Itinéraire de livraison"
+        },
+        "view_detail_warehouse_info":"Afficher des informations détaillées sur l'entrepôt",
+
+        "storage_location":{
+            "msg":"Lieu de stockage des marchandises (cellule d'entrepôt)"
+        },
+
+        "color":{
+            "color_representation":"Représentation des couleurs",
+            "active":"Couleur active",
+            "code":"Code Couleur",
+            "comment":"Commentaire"
+        },
+
+        "delivery_types":"Type de Livraison",
+        "comment":"Commentaire",
+
+        "button":{
+            "edit":"Modifier",
+            "add":"Ajouter"
+        },
+
+        "primary_data":"Information Primaire",
+        "of_provider":"du Fournisseur",
+        "type_ownership":"Type de propriété",
+        "name_company":"Nom de la Company",
+        "tax_nb":"Numero Tax ",
+        "registration_code":"Code de motif d'inscription",
+        "bank_name":"Nom de la Banque",
+        "bank_id":"Code d'identification de la Banque",
+        "primary_state_regist_nb":"Numéro d'enregistrement de l'État primaire",
+        "okpo":"OKPO",
+        "c_account":"Compte correspondant" ,
+        "p_account":"Compte de paiement",
+        "with_VAT":"avec VAT",
+        "reason":"Raison (contrat, procuration)"
+
+
+    },
+
+
+    
+
+    "Facture":{
+        "title":"Table de factures"
+    },
+
+    "Liste_Fournisseurs":{
+        "title":"Liste des Fournisseurs"
+    },
+
+    "Commande_Fournisseur":{
+        "title":"Liste des Commandes de Fournisseurs"
+    },
+
+    "Livraison_Fournisseur":{
+        "title":"Lsit des Livraison de Fournisseurs"
+    },
+
+    "Nouveau_bl_client":{
+        "title":"Liste des Livraisons de Client",
+        "info":{
+            "title":"Information",
+            "msg":"Ici, vous pouvez sélectionner un client et sélectionner le produit qui a été récupéré."
+        },
+        "select_client_order":"Veuillez sélectionner un client et les commandes.",
+        "select_client":"Veuillez choisir un client",
+        "new_table_title":"Nouveau tableau de livraison de client",
+        "button":"Confirmer"
+    },
+
+    "Nouveau_Bc_Fournisseur":{
+        "title":"Nouvelle Commandes Fournisseurs",
+        "please_select":"Veuillez sélectionner un fournisseur et les commandes.",
+        "select_provider":"Veuillez sélectionner un fournisseur",
+        "new_table_title":"Nouveau tableau de Commandes Fournisseurs",
+        "button":"Créer"
+
+    },
+
+    "Nouveau_Bl_Fournisseur":{
+        "title":"Nouvelle Livraison Fournisseur",
+        "info":{
+            "title":"Information",
+            "msg":"Ici, vous pouvez sélectionner un fournisseur et sélectionner le produit que vous avez reçu. après avoir sélectionné tous les produits que vous avez reçus, vous pouvez le confirmer."
+        },
+        "select_provider_order":"Veuillez sélectionner un fournisseur et les commandes.",
+        "select_provider":"Veuillez sélectionner un fournisseur",
+        "new_table_title":"Nouveau tableau de livraison fournisseur",
+        "button":"Confirmer"
+    },
+
+    "Nouveau_Produit":{
+        "data":"Contenu",
+        "cathegory_family":"Catégorie Famille",
+        "cathegory_sub":"Catégorie sous-Famille",
+        "keep_order":"Gardez l'ordre",
+        "vacancy_rate":"Taux de vacance",
+        "bar_code":"Bar code",
+        "min_price":"Prix ​​de vente minimum",
+        "img_url":"Image URL",
+        "unity":"Unité",
+        "is_new":"Est-ce nouveau ?",
+        "button":"Ajouter",
+        "msg_select_provider":"Veuillez selectioner un fournisseur"
+    },
+
+    "Liste_des_avoirs":{
+        "title":"Retourner un produit",
+        "alert_msg":"Veuillez selectioner un client et ses produit.",
+        "choose_client":"Veuillez selectioner un client",
+        "id_line":"ID Ligne",
+        "order_date":"Date de Commande",
+        "product_to_return":"Produit à Retourner",
+        "button":"Retourner"
+    },
+
+    "admin_user":{
+        "title":" Liste de gestion d'Admin",
+        "refresh_table":"Actualiser le tableau",
+        "button_del":"Supprimer",
+        "add_admin":"Ajouter un utilisateur Admin",
+        "button_add":"Ajouter",
+        "password":"Mot de Passe",
+        "confirm_password":"Confirmation du Mot de Passe"
+
+    },
+    
+    "api":{
+        "add":"Ajouter",
+        "API":"API",
+        "ip_provider":"IP Fournisseur",
+        "api_l": "lien API",
+        "key": "Clé",
+        "button":{
+            "confirm":"Confirmer",
+            "reset":"Reinitialiser les données"
+        },
+        "table_title":"Liste API ",
+        "msg_ip":"Notez l'IP de l'entreprise",
+        "api_enter_key":"Veuillez saisir la clé de l'API"
+
+
+    },
+
+    "login":{
+        "title":"Era-Auto Plateforme Admin ",
+        "login":"Se connecter",
+        "sign_in":"Connectez-vous à votre compte",
+        "forgot":"Mot de passe oublié ?",
+        "password":"Mot de Passe"
+    }
+    
+
+
+}

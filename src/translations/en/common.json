@@ -1,0 +1,419 @@
+{
+    "translate": {
+        "title":"Language",
+        "msg":"Select a language",
+        "en":"English",
+        "fr":"French",
+        "ru":"Russia"
+    },
+
+    "side_menu":{
+        "home":"HOME",
+        "client":{
+            "title":"CLIENT",
+            "list":"Client List",
+            "cathegory":"Cathegory Client",
+            "order":"Client Order",
+            "delivery":"Client Delivery",
+            "new":"New Client",
+            "new_delivery":"New Client's Delivery",
+            "bill":"Bills"
+        },
+        "provider":{
+            "title":"PROVIDER",
+            "list":"Provider List",
+            "order":"Provider Order",
+            "delivery":"Provider Delivery",
+            "new":"New Provider",
+            "new_delivery":"New Provider's Delivery",
+            "new_order":"New Provider's Order"
+        },
+        "product":{
+            "title":"PRODUCTS",
+            "new":"New Product",
+            "return":"Return Products"
+        },
+        "admin":
+        {
+            "title":"ADMINISTRATION",
+            "api":"API",
+            "list":"Admin List"
+        }
+    },
+
+    "navbar": {
+        "Dashboard":"Dashboard",
+        "Logout" : "Log out"        
+    },
+
+    "DashBoard": {
+        "total_client":"Total Clients",
+        "total_provider": "Total Providers",
+        "total_sell":"Total Sells",
+        "gain_received":"Total Orders" 
+
+    },
+
+    "utils": {
+        "refresh_table": "Refresh",
+        "error_msg":"Error"
+    },    
+
+    "filters":{
+        "date":"Date",
+        "period":"Period",
+        "start_period":"Start",
+        "end_period":"End",
+        "search": "Search",
+        "no_result":"No Result Found",
+        "insert_param":"Please insert a parameter first"
+
+    },
+
+    "tables_info":{
+        "id_client": "ID Client",
+        "last_name": "Last Name",
+        "first_name": "First Name",
+        "name":"Client Name",
+        "id":"ID",
+        "username":"Uername",
+        "email":"Email",
+        "date_registration":"Date registered",
+        "role": "Role",
+        "phone":"Phone",
+        "status":"Status",
+        "action":"Action",
+        "status_active":"Active",
+        
+        "id_order":"ID Order",
+        "order":"Order",
+        "client":"Client",
+        "total":"Total",
+        "detail": "Detail",
+
+        "product_name": "Product Name",
+        "id_product":"ID Product",
+        "quantity": "Quantity",
+        "price": "Price",
+        "total_price": "Total Amout",
+        
+        "id_delivery":"ID Delivery",
+        "id_provider_delivery":"Id Provider's Delivery",
+        "result":"Result",
+        "bill_number":"Bill Number",
+        "date_bill":"Date of the bill",
+        "type_paiement":"Type of Paiment",
+        "is_paid":"Is Paid ?",
+        "paid":"Paid",
+        "not_paid":"Not Paid",
+        
+        "provider":"Provider Name",
+        "client_order_id":"Client's Order ID",
+        "delivery":"Delivery",
+
+        "states":{
+            "state":"State",
+            "open":"Open",
+            "recieved":"Recieved",
+            "in_progress": "In Progress",
+            "closed":"Closed",
+            "rejected":"Order Rejected"            
+        },
+
+        "ip_p": "Ip Provider",
+        "api_l": "API Link",
+        "key": "Key"
+
+    },
+
+    "Liste_Client": {
+        "client_list":"Client List",        
+        "send_notif":"Notification",
+        "send_notif_message":"Send a Notification to ",
+        "category":"Category",
+        "select_category":"Select a category",
+        "content": "Content",
+        "send":"Send",
+        "edit_client":"Edit",
+        "placeholder_msg":"Write your Message here"
+    },
+
+    "Cathegory_Client": {
+        "type_client_list":"Type of Client List",
+        "type_client": "Type of Client",
+        "margin": "Margin",
+        "add_category":"Add",
+        "name": "Name",
+        "add_category_confirm":"Add",
+        "delete":"Delete",
+        "msg_default":"You can't delete the default Category",
+        "msg_alertbox":"Please enter some Data"    
+    },
+
+    "Commande_Client": {
+        "order_list":"Order List",
+        "id_order":"ID Order",
+        "client_name":"Client Name",
+        "confirm_cancel_order_msg":"Do you confirm to Cancel the order ?",
+        "yes":"Yes",
+        "no":"No"
+        
+
+    },
+
+    "Livraison_Client": {
+        "delivery_list":"Delivery List"
+    },
+
+    "form_info":{
+        "data":"Data",
+        "email":"Email",
+        "phone":"Phone Number",
+        "password":"Password",
+        "password_confirm":"Password Confirmation",
+        "not_use_primary_message":"Do not use primary messaging",
+
+        "contact_person":"Contact Person",
+        "last_name":"Last Name",
+        "first_name":"First Name",
+        "second_name":"Second Last Name",
+        "active":"Active",
+        "refuse_profile_modif":"Refuse profile modification",
+        "display_OEM": "Display OEM numbers as a percentage",
+
+        "additional":"Additional",
+        "contact":"Contact",
+        "skype":"Skype",
+        "icq":"ICQ",
+        "website":"Website",
+
+        "legal":"Legal",
+        "delivery":"Delivery",
+        "adress":"Adress",
+        "index":"Index",
+        "region":"Region",
+        "city":"City",
+        "street":"Street",
+        "house":"House",
+        "appartement":"Appartement / Office",
+
+        "client":"Client",
+        "information":"Information",
+        "type_client":"Type of Client",
+        "reply_format": "Reply Format",
+        "reply": "Reply",
+        "dont_send":"Don't Send",
+        "send_after":"Send after treatment",
+        "send_after_param_status":"Send after answer and change status \"Rejected\"",
+        "discount_group":"Discount Group",
+        "allow_customer_asign_discount_groupe":"Allow the customer to assign himself a discount group",
+
+        "credit_limit":"Credit Limit (0 - no loan)",
+        "day_deferred_paiement":"Day of deferred paiement (0 - no report)",
+
+        "discount_card_number":"Discount card number",
+        "promotional_code":"Promotional code (multiple reduction card)",
+        "basis":"Basis (agreement, proxy)",
+        "1cid":"1c ID",
+
+        "invoice_auto":"Issue an invoice automatically",
+        "send_sms":"Send a SMS",
+        "send_email":"Send an Email",
+        "receive_last_news":"Receive the latest news",
+        "dont_send_direct_mail":"Do not send direct mail",
+
+        "second_name_in_price_list":"The second name in the price list",
+        "view_warehouse_info":"View warehouse information",
+        "prohib_auto_remittance":"Prohibition of automatic remittances",
+        "allow_print_basket":"Allow to print basket",
+        "disable_access_web":"Disable access to web services",
+
+        "prohib_invoice":"Prohibit the creation of invoices in the presence of overdue debts",
+        "dont_send_invoice":"Do not send any documents after creating the invoice",
+        "allow_change_name_product":"Allows to change the name of the product in the basket window (V2)",
+        "max_nb_request_pday":"Maximum number of requests (Laximo) per day",
+        "percentage_package":"As much as possible in a percentage of packages",
+        "max_nb_visit_24h":"Max Number of visit in the last 24 hours",
+        "max_nb_visit_hour":"Max Number of visit in the last few hours",
+        "notif_sent_msg":"A Notification is sent to the customer manager if the item \"Warn me about excessive requests\" is active in the website - General settings",
+        "exclude_mark":"Exclude marks from blocking",
+        "exclude_mark_notif":"One mark per line. If you add a brand to the list, this customer brand exclusion will not work with the exclude price lists or exclude models feature.",
+        
+        "director":"Director",
+        "action_when_order":{
+            "msg":"Action when ordering",
+            "select1":"Awaiting approval",
+            "select2":"\"To work\" with a positive limit",
+            "select3":"Switch to order with a positive limit",
+            "select4":"If there is no credit limit, we transfer to \"Pending Payment\"",
+            "select5":"If there is no credit limit, we transfer it to \"Awaiting payment\", if available, we transfer it to \"In progress\" status",
+            "select6":"If there is no credit limit, we do not place it in the order, if available, we transfer it to the status \"In progress\""
+        },
+        
+        "approved_payement_method":{
+            "msg":"Approved payment method"
+        },
+
+        "snapping_visibility":{
+            "msg":"Snapping to visibility"
+        },
+        "disable_default_visibility":"Disable Default Visibility",
+
+        "delivery_itinary":{
+            "msg":"Delivery itinerary"
+        },
+        "view_detail_warehouse_info":"View detailed warehouse information",
+
+        "storage_location":{
+            "msg":"Storage location of goods (warehouse cell)"
+        },
+
+        "color":{
+            "color_representation":"Color representation",
+            "active":"Active Color",
+            "code":"Color Code",
+            "comment":"Commentary"
+        },
+
+        "delivery_types":"Delivery Types",
+        "comment":"Comment",
+
+        "button":{
+            "edit":"Edit",
+            "add":"Add"
+        },
+
+        "primary_data":"Primary Data",
+        "of_provider":"of Provider",
+        "type_ownership":"Type of ownership",
+        "name_company":"Name of Company",
+        "tax_nb":"Tax Number",
+        "registration_code":"Registration reason code",
+        "bank_name":"Bank Name",
+        "bank_id":"Bank identification code",
+        "primary_state_regist_nb":"Primary State Registration Number",
+        "okpo":"OKPO",
+        "c_account":"Corresponding Account" ,
+        "p_account":"Payment Account",
+        "with_VAT":"With VAT",
+        "reason":"Reason (contract, power of attorney)"
+
+
+    },
+
+
+    
+
+    "Facture":{
+        "title":"Bills Table"
+    },
+
+    "Liste_Fournisseurs":{
+        "title":"Provider List"
+    },
+
+    "Commande_Fournisseur":{
+        "title":"Provider's Order List"
+    },
+
+    "Livraison_Fournisseur":{
+        "title":"Delivery List"
+    },
+
+    "Nouveau_bl_client":{
+        "title":"Delivery Client List",
+        "info":{
+            "title":"Info",
+            "msg":"Here you can select a Client and select the Product that have been recovered."
+        },
+        "select_client_order":"Please Select a Client and the orders.",
+        "select_client":"Please Choose a Client",
+        "new_table_title":"New Delivery Client Table",
+        "button":"Confirm"
+    },
+
+    "Nouveau_Bc_Fournisseur":{
+        "title":"New Provider's Order",
+        "please_select":"Please Select a Provider and the orders",
+        "select_provider":"Please Choose a provider",
+        "new_table_title":"New Order Provider Table",
+        "button":"Create"
+
+    },
+
+    "Nouveau_Bl_Fournisseur":{
+        "title":"New Provider's Delivery",
+        "info":{
+            "title":"Info",
+            "msg":"Here you can select a provider and select the Product you received. after selecting all the product you recieved, you can confirm it."
+        },
+        "select_provider_order":"Please Select a Provider and the orders.",
+        "select_provider":"Please Choose a Provider",
+        "new_table_title":"New Delivery Provider Table",
+        "button":"Confirm"
+    },
+
+    "Nouveau_Produit":{
+        "data":"Data",
+        "cathegory_family":"Cathegory Family",
+        "cathegory_sub":"Cathegory Subfamiliy",
+        "keep_order":"Keep Order",
+        "vacancy_rate":"Vacancy rate",
+        "bar_code":"Bar code",
+        "min_price":"Minimum retail price",
+        "img_url":"Image URL",
+        "unity":"Unity",
+        "is_new":"Is it new ?",
+        "button":"Add",
+        "msg_select_provider":"Please Select a Provider"
+    },
+
+    "Liste_des_avoirs":{
+        "title":"Return back a product",
+        "alert_msg":"Please Select a Provider and the orders.",
+        "choose_client":"Please choose a client",
+        "id_line":"ID Line",
+        "order_date":"Order Date",
+        "product_to_return":"Products to return",
+        "button":"Return"
+    },
+
+    "admin_user":{
+        "title":" Admin User List",
+        "refresh_table":"Refresh",
+        "button_del":"Delete",
+        "add_admin":"Add an Admin User",
+        "button_add":"Add",
+        "password":"Password",
+        "confirm_password":"Confirm Password"
+
+    },
+    
+    "api":{
+        "add":"Add",
+        "API":"API",
+        "ip_provider":"IP Provider",
+        "api_l": "API Link",
+        "key": "Key",
+        "button":{
+            "confirm":"Confirm",
+            "reset":"Reset"
+        },
+        "table_title":"API List",
+        "msg_ip":"Write down the IP of the company",
+        "api_enter_key":"Please Enter the API's Key"
+
+
+    },
+
+    "login":{
+        "title":"Era-Auto Admin Panel",
+        "login":"Login",
+        "sign_in":"Sign in to your account",
+        "forgot":"Forgot Password ?",
+        "password":"Password"
+    }
+    
+
+
+}

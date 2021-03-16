@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { Badge, UncontrolledDropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem } from 'reactstrap';
+import { Link, NavLink, Redirect } from 'react-router-dom';
+import { Badge, UncontrolledDropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, Button, Dropdown } from 'reactstrap';
 import PropTypes from 'prop-types';
 
 import { AppAsideToggler, AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
-import logo from '../../assets/img/brand/logo.svg'
-import sygnet from '../../assets/img/brand/sygnet.svg'
+import logo from '../../assets/img/brand/logo.png'
+import sygnet from '../../assets/img/brand/logo1.png'
+import Cookies from 'js-cookie';
+
+import i18next from '../../i18next';
+import { useTranslation, withTranslation } from "react-i18next";
+
+import language_icon from '../../assets/flag_langage/language.png';
+import en_flag from '../../assets/flag_langage/en.png';
+import fr_flag from '../../assets/flag_langage/fr.png';
+import ru_flag from '../../assets/flag_langage/ru.png';
+
 
 const propTypes = {
   children: PropTypes.node,
@@ -14,64 +24,116 @@ const propTypes = {
 const defaultProps = {};
 
 class DefaultHeader extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      redirection: false,
+      dropdownOpen: false,
+      lg: i18next.languages[0]
+    }
+
+    this.logout = this.logout.bind(this);
+    this.toggle = this.toggle.bind(this);
+    this.getlangage = this.getlangage.bind(this);
+    this.get_render_langage = this.get_render_langage.bind(this);
+  }
+
+
+  logout() {
+    Cookies.remove("auth_Era_Auto_Admin");
+    this.setState({
+      redirection: true
+    })
+  }
+
+  toggle(){
+    let open;
+
+    if(this.state.dropdownOpen){
+      open = false
+    }
+    else{
+      open = true;
+    }
+
+    this.setState({
+      dropdownOpen: open
+    })
+  }
+
+  getlangage(lg){    
+    i18next.changeLanguage(lg)
+    this.setState({
+      lg: lg
+    })
+  }
+
+  get_render_langage(lg){
+    const {t} = this.props
+
+    switch (lg) {
+      case 'en':
+        return <DropdownToggle caret>{t("translate.en")}  <img width="25" src={en_flag}/></DropdownToggle>
+      break;
+      
+      case 'fr':
+        return <DropdownToggle caret>{t("translate.fr")}  <img width="25" src={fr_flag}/></DropdownToggle>
+        break;
+
+      case 'ru':
+        return <DropdownToggle caret>{t("translate.ru")}  <img width="25" src={ru_flag}/></DropdownToggle>
+      break;
+
+      default:
+        return <DropdownToggle caret> {t("translate.title")} <img width="20" src={language_icon}/></DropdownToggle>
+      break;
+    }
+  }
+
+
   render() {
 
     // eslint-disable-next-line
     const { children, ...attributes } = this.props;
 
+    console.log(this.props)
+    if (this.state.redirection) {
+      return <Redirect to='/login' />
+    }
+
+    const { t } = this.props;
+
     return (
+
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
         <AppNavbarBrand
-          full={{ src: logo, width: 89, height: 25, alt: 'CoreUI Logo' }}
-          minimized={{ src: sygnet, width: 30, height: 30, alt: 'CoreUI Logo' }}
+          full={{ src: logo, width: 160, height: 50, alt: 'CoreUI Logo' }}
+          minimized={{ src: sygnet, width: 50, height: 50, alt: 'CoreUI Logo' }}
+        // style={{backgroundColor: 'black'}}
         />
         <AppSidebarToggler className="d-md-down-none" display="lg" />
 
         <Nav className="d-md-down-none" navbar>
           <NavItem className="px-3">
-            <NavLink to="/dashboard" className="nav-link" >Dashboard</NavLink>
-          </NavItem>
-          <NavItem className="px-3">
-            <Link to="/users" className="nav-link">Users</Link>
-          </NavItem>
-          <NavItem className="px-3">
-            <NavLink to="#" className="nav-link">Settings</NavLink>
+            <NavLink to="/dashboard" className="nav-link" >{t('navbar.Dashboard')}</NavLink>
           </NavItem>
         </Nav>
         <Nav className="ml-auto" navbar>
-          <NavItem className="d-md-down-none">
-            <NavLink to="#" className="nav-link"><i className="icon-bell"></i><Badge pill color="danger">5</Badge></NavLink>
-          </NavItem>
-          <NavItem className="d-md-down-none">
-            <NavLink to="#" className="nav-link"><i className="icon-list"></i></NavLink>
-          </NavItem>
-          <NavItem className="d-md-down-none">
-            <NavLink to="#" className="nav-link"><i className="icon-location-pin"></i></NavLink>
-          </NavItem>
-          <UncontrolledDropdown nav direction="down">
-            <DropdownToggle nav>
-              <img src={'../../assets/img/avatars/6.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com" />
-            </DropdownToggle>
-            <DropdownMenu right>
-              <DropdownItem header tag="div" className="text-center"><strong>Account</strong></DropdownItem>
-              <DropdownItem><i className="fa fa-bell-o"></i> Updates<Badge color="info">42</Badge></DropdownItem>
-              <DropdownItem><i className="fa fa-envelope-o"></i> Messages<Badge color="success">42</Badge></DropdownItem>
-              <DropdownItem><i className="fa fa-tasks"></i> Tasks<Badge color="danger">42</Badge></DropdownItem>
-              <DropdownItem><i className="fa fa-comments"></i> Comments<Badge color="warning">42</Badge></DropdownItem>
-              <DropdownItem header tag="div" className="text-center"><strong>Settings</strong></DropdownItem>
-              <DropdownItem><i className="fa fa-user"></i> Profile</DropdownItem>
-              <DropdownItem><i className="fa fa-wrench"></i> Settings</DropdownItem>
-              <DropdownItem><i className="fa fa-usd"></i> Payments<Badge color="secondary">42</Badge></DropdownItem>
-              <DropdownItem><i className="fa fa-file"></i> Projects<Badge color="primary">42</Badge></DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem><i className="fa fa-shield"></i> Lock Account</DropdownItem>
-              <DropdownItem onClick={e => this.props.onLogout(e)}><i className="fa fa-lock"></i> Logout</DropdownItem>
+
+          <Button color="danger" onClick={() => this.logout()}>{t('navbar.Logout')}</Button>
+
+          <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>            
+              {this.get_render_langage(this.state.lg)}          
+            <DropdownMenu>
+              <DropdownItem header>{t("translate.msg")}</DropdownItem>
+              <DropdownItem onClick={() => this.getlangage('en')}>{t("translate.en")} <img width="25" src={en_flag}/> </DropdownItem>
+              <DropdownItem onClick={() => this.getlangage('fr')}>{t("translate.fr")} <img width="25" src={fr_flag}/></DropdownItem>
+              <DropdownItem onClick={() => this.getlangage('ru')}>{t("translate.ru")} <img width="25" src={ru_flag}/></DropdownItem>              
             </DropdownMenu>
-          </UncontrolledDropdown>
-        </Nav>
-        <AppAsideToggler className="d-md-down-none" />
-        {/*<AppAsideToggler className="d-lg-none" mobile />*/}
+          </Dropdown>          
+        </Nav>        
       </React.Fragment>
     );
   }
@@ -80,4 +142,6 @@ class DefaultHeader extends Component {
 DefaultHeader.propTypes = propTypes;
 DefaultHeader.defaultProps = defaultProps;
 
-export default DefaultHeader;
+const DefaultHeader_Translated = withTranslation('common')(DefaultHeader)
+
+export default DefaultHeader_Translated;
